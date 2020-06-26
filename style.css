@@ -9,20 +9,48 @@ body {
   );
   font-family: "Krona One", sans-serif;
 }
+
 h1 {
-  padding: 3vh;
+  font-size: 4vh;
   color: antiquewhite;
+  padding: 3vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 2em;
+}
+.container button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: rgb(11, 69, 155);
+  font-size: 20px;
+  font-family: "Krona One", sans-serif;
+  background-color: rgb(129, 188, 236);
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  padding: 2vh;
+  transition: 100ms;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5vh;
+}
+
+.linkedGame:hover {
+  transform: scale(1.2);
 }
 
 .selections {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 3vh;
 }
 
 .selection {
@@ -30,8 +58,8 @@ h1 {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 8em;
-  transition: 1000ms;
+  font-size: 5em;
+  transition: 200ms;
 }
 
 .selection:hover {
@@ -39,31 +67,30 @@ h1 {
 }
 
 .results {
-  font-size: 2em;
-  color: antiquewhite;
+  margin-top: 1rem;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+  font-size: 3em;
+  color: antiquewhite;
 }
+
 .result-score {
+  margin-left: 0.1rem;
+  font-size: 2em;
   color: whitesmoke;
 }
 
 .result-selection {
   opacity: 0.5;
-  font-size: 2.5em;
 }
 
 .result-selection.winner {
   opacity: 1;
-  font-size: 3em;
 }
 
-.change-game {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
+.next {
+  position: absolute;
 }

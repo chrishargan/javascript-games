@@ -4,39 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors, Spock, Lizard</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
       rel="stylesheet"
     />
-    
-    <title>Rock, Paper, Scissors , Spock and Lizard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Rock, Paper, Scissors , Spock and Lizard</h1>
-
-    <div class="selections">
-      <button class="selection" data-selection="rock">✊🏻</button>
-      <button class="selection" data-selection="paper">✋🏻</button>
-      <button class="selection" data-selection="scissors">✌🏻</button>
-      <button class="selection" data-selection="spock">🖖🏻</button>
-      <button class="selection" data-selection="lizard">🦎</button>
+    <div class="container">
+      <button class="linkedGame">
+        <a href="memorygame.html"> </a>Memory Game
+      </button>
     </div>
-    <div class="results">
-      <div>
-        Player:
-        <span class="result-score">0</span>
+    <h1>Rock, Paper, Scissors, Spock, Lizard</h1>
+    <div class="selections-container">
+      <div class="selections">
+        <button class="selection" data-selection="rock">✊🏻</button>
+        <button class="selection" data-selection="paper">✋🏻</button>
+        <button class="selection" data-selection="scissors">✌🏻</button>
+        <button class="selection" data-selection="spock">🖖🏻</button>
+        <button class="selection" data-selection="lizard">🦎</button>
       </div>
-      <div>
-        Computer:
-        <span class="result-score">0</span>
+      <div class="results">
+        <div>
+          Player:
+          <span class="result-score" data-your-score>0</span>
+        </div>
+        <div data-final-column>
+          Computer:
+          <span class="result-score" data-computer-score>0</span>
+        </div>
       </div>
-
-
-     
-
-    
-       
-   <script src="script.js" defer></script>
+    </div>
   </body>
 </html>
