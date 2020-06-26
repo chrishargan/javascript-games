@@ -1,27 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-h1,
-h2 {
-  font-family: "Krona One", sans-serif;
-  font-size: 50px;
-  color: antiquewhite;
-  text-align: center;
-}
-h1 {
-  font-size: 3.5em;
-}
-h2 {
-  font-size: 2em;
-}
-
-h1 {
-  padding-top: 5vh;
-}
-
-section {
+body {
   height: 100vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -32,151 +9,61 @@ section {
   );
   font-family: "Krona One", sans-serif;
 }
-/*  overlay components */
-/*.overlay-text {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+h1 {
+  padding: 3vh;
+  color: antiquewhite;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  z-index: 100;
-  color: antiquewhite;
-  font-family: "Krona One", sans-serif;
+  flex-wrap: wrap;
+  font-size: 2em;
 }
-.overlay-text.visible {
+
+.selections {
   display: flex;
-  flex-direction: column;
-  animation: overlay-grow 500ms forwards;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3vh;
 }
 
-@keyframes overlay-grow {
-  from {
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 0;
-  }
-  to {
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: 7em;
-  }
-}
-
-/*
-
-/*  game components*/
-
-a {
-  text-decoration: none;
-}
-a:link,
-a:visited {
-  color: antiquewhite;
-}
-a:hover {
-  color: antiquewhite;
-}
-
-.score {
-  color: antiquewhite;
-  height: 20vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.next {
-  color: antiquewhite;
-  height: 20vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.score h2 {
-  font-size: 30px;
-}
-.score p {
-  text-align: center;
-  padding: 10px;
-  font-size: 25px;
-}
-
-.intro {
-  color: antiquewhite;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  transition: opacity 0.5s ease;
-}
-.intro h1 {
-  font-size: 50px;
-}
-.intro button,
-.match button,
-.next button {
-  width: 150px;
-  height: 50px;
+.selection {
   background: none;
   border: none;
-  color: antiquewhite;
-  font-size: 20px;
-  font-family: "Krona One", sans-serif;
-  background-color: rgb(45, 117, 96);
-  border-radius: 3px;
+  outline: none;
   cursor: pointer;
+  font-size: 8em;
+  transition: 1000ms;
 }
-.match {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.5s ease 0.5s;
+
+.selection:hover {
+  transform: scale(1.2);
 }
-.winner {
+
+.results {
+  font-size: 2em;
   color: antiquewhite;
-  text-align: center;
-  font-size: 50px;
-}
-.hands,
-.options {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   align-items: center;
 }
-.player-hand {
-  transform: rotateY(180deg);
+.result-score {
+  color: whitesmoke;
 }
 
-@keyframes shakePlayer {
-  0% {
-    transform: rotateY(180deg) translateY(0px);
-  }
-  50% {
-    transform: rotateY(180deg) translateY(-50px);
-  }
-  100% {
-    transform: rotateY(180deg) translateY(0px);
-  }
+.result-selection {
+  opacity: 0.5;
+  font-size: 2.5em;
 }
 
-@keyframes shakeComputer {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.result-selection.winner {
+  opacity: 1;
+  font-size: 3em;
 }
 
-/* styling just for memory game */
-.matches {
-  color: antiquewhite;
+.change-game {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-
-/*  Media queries */

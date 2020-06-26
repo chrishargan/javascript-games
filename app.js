@@ -20,12 +20,12 @@ const game = () => {
         });
 
         //computers move
-        const computerOptions = ["rock", "paper", "scissors"];
+        const computerOptions = ["rock", "paper", "scissors", "spock", "lizard"];
 
         options.forEach(option => {
             option.addEventListener("click", function () {
                 // computer choice
-                const computerNumber = Math.floor(Math.random() * 3);
+                const computerNumber = Math.floor(Math.random() * 5);
                 const computerChoice = computerOptions[computerNumber];
 
                 // Here is where we call the compareHands function
