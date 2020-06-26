@@ -5,18 +5,7 @@ const game = () => {
     let cScore = 0;
 
     // starts the game
-    const startGame = () => {
-        const playBtn = document.querySelector(".intro button");
-        const introScreen = document.querySelector(".intro");
-        const match = document.querySelector(".match");
 
-        playBtn.addEventListener("click", () => {
-            introScreen.classList.add("fadeOut");
-            match.classList.add("fadeIn");
-            player - score.classList.add("fadeIn");
-            computer - score.classList.add("fadeIn");
-        });
-    };
     //Play match 
     const playMatch = () => {
         const options = document.querySelectorAll(".options button");
