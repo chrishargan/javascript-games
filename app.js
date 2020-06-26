@@ -112,7 +112,7 @@ const game = () => {
     };
 
     // this then calls all the inner functions
-    startGame();
+
     playMatch();
 
 
