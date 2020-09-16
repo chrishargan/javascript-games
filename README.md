@@ -43,7 +43,8 @@ A recreation of the game `memory`. It is a game where  you have a bunch of cards
 - Readme, but that shouldn't even have to be said
 - Explanation on the page itself
 
-<img src"assets/memory-game.png">
+<img src="assets/memory-game.png">
+
 
 The linked games can be found at 
 https://chrishargan.github.io/javascript-games/index.html
